@@ -65,138 +65,121 @@ A pointer in C++ is a variable that stores the memory address of another variabl
 
 ## 1. Algorithm: Incrementation in Pointers
 
-#### Step 1: 
-Start.
-#### Step 2: 
-Declare an integer variable a and initialize it to 50.
-#### Step 3: 
-Declare an integer pointer ptr.
-#### Step 4:
-Assign the address of a to ptr.
-#### Step 5: 
-Print "FLOAT" (misplaced label; ignore for now).
-#### Step 6:
-Print the address stored in ptr and the value pointed to by ptr.
-#### Step 7:
-Increment ptr by 1.
+**Step 1**: Start.
+
+**Step 2**: Declare an integer variable a and initialize it to 50.
+
+**Step 3**: Declare an integer pointer ptr.
+
+**Step 4**: Assign the address of a to ptr.
+
+**Step 5**: Print "FLOAT" (misplaced label; ignore for now).
+
+**Step 6**: Print the address stored in ptr and the value pointed to by ptr.
+
+**Step 7**: Increment ptr by 1.
+
 - This moves the pointer to the next memory location for an int (usually +4 bytes).
-#### Step 8:
-Print the new address in ptr and try to dereference it.
+
+**Step 8**: Print the new address in ptr and try to dereference it.
+
 - Dereferencing may result in garbage or undefined behavior.
-#### Step 9:
-Print "FLOAT".
-#### Step 10:
-Declare a float variable b and initialize it to 70.1.
-#### Step 11: 
-Declare a float pointer bptr and assign the address of b.
-#### Step 12:
-Print the address stored in bptr and the value of *ptr.
+
+**Step 9**: Print "FLOAT".
+
+**Step 10**: Declare a float variable b and initialize it to 70.1.
+
+**Step 11**: Declare a float pointer bptr and assign the address of b.
+
+**Step 12**: Print the address stored in bptr and the value of *ptr.
+
 - Note: *ptr is re-used from earlier (might be garbage).
-#### Step 13:
-Increment bptr.
+
+**Step 13**: Increment bptr.
+
 - Moves to the next float (typically +4 bytes).
-#### Step 14:
-Print the new address in bptr and again print *ptr.
+
+**Step 14**: Print the new address in bptr and again print *ptr.
+
 - Again, *ptr is not logically relevant here.
-#### Step 15:
-Print "DOUBLE".
-#### Step 16:
-Declare a double variable c and initialize it to 23.34567.
-#### Step 17:
-Declare a double pointer cptr and assign the address of c.
-#### Step 18:
-Print the address stored in cptr and *ptr.
+
+**Step 15**: Print "DOUBLE".
+
+**Step 16**: Declare a double variable c and initialize it to 23.34567.
+
+**Step 17**: Declare a double pointer cptr and assign the address of c.
+
+**Step 18**: Print the address stored in cptr and *ptr.
+
 - Again, *ptr is unrelated and potentially garbage.
-#### Step 19:
-Increment cptr.
+
+**Step 19**: Increment cptr.
+
 - Moves to the next double (typically +8 bytes).
-#### Step 20:
-Print the new address in cptr and *ptr again.
-#### Step 21:
-End.
+
+**Step 20**: Print the new address in cptr and *ptr again.
+
+**Step 21**: End.
 
 ## 2. Algorithm: Addition and Substraction of two numbers
 
-#### Step 1:
-Start.
+**Step 1**: Start.
 
-#### Step 2:
-Declare integer variables a, b, sum, and diff.
+**Step 2**: Declare integer variables a, b, sum, and diff.
 
-#### Step 3:
-Prompt the user to enter the first number.
+**Step 3**: Prompt the user to enter the first number.
 
-#### Step 4:
-Read the first number and store it in variable a.
+**Step 4**: Read the first number and store it in variable a.
 
-#### Step 5:
-Prompt the user to enter the second number.
+**Step 5**: Prompt the user to enter the second number.
 
-#### Step 6:
-Read the second number and store it in variable b.
+**Step 6**: Read the second number and store it in variable b.
 
-#### Step 7:
-Declare integer pointers aptr and bptr.
+**Step 7**: Declare integer pointers aptr and bptr.
 
-#### Step 8:
-Assign the address of a to pointer aptr.
+**Step 8**: Assign the address of a to pointer aptr.
 
-#### Step 9:
-Assign the address of b to pointer bptr.
+**Step 9**: Assign the address of b to pointer bptr.
 
-#### Step 10:
-Calculate the sum by dereferencing aptr and bptr and adding the values.
+**Step 10**: Calculate the sum by dereferencing aptr and bptr and adding the values.
 
-#### Step 11:
-Store the sum in variable sum.
+**Step 11**: Store the sum in variable sum.
 
-#### Step 12:
-Print the sum.
+**Step 12**: Print the sum.
 
-#### Step 13:
-Calculate the difference by dereferencing aptr and bptr and subtracting the values.
+**Step 13**: Calculate the difference by dereferencing aptr and bptr and subtracting the values.
 
-#### Step 14:
-Store the difference in variable diff.
+**Step 14**: Store the difference in variable diff.
 
-#### Step 15:
-Print the difference.
+**Step 15**: Print the difference.
 
-#### Step 16:
-End.
+**Step 16**: End.
 
 ## 3. Algorithm: Reversing an array using pointers
 
-#### Step 1:
-Start.
+**Step 1**: Start.
 
-#### Step 2:
-Declare an integer array arr of size 5.
+**Step 2**: Declare an integer array arr of size 5.
 
-#### Step 3:
-Prompt the user to enter 5 elements.
+**Step 3**: Prompt the user to enter 5 elements.
 
-#### Step 4:
-For each index i from 0 to 4:
+**Step 4**: For each index i from 0 to 4:
 
 - Read input from the user.
-.
+
 - Store the input value at address (arr + i) (i.e., arr[i]).
 
-#### Step 5:
-Print the original array by iterating from 0 to 4:
+**Step 5**: Print the original array by iterating from 0 to 4:
 
 - Print the value at address (arr + j) for each index j.
 
-#### Step 6:
-Initialize two pointers:
+**Step 6**: Initialize two pointers:
 
 - Start pointing to the first element of the array (arr).
 
 - End pointing to the last element of the array (arr + 4).
 
-#### Step 7: 
-While start is less than end:
+**Step 7**: While start is less than end:
 
 - Swap the values pointed by start and end using a temporary variable temp.
 
@@ -204,35 +187,27 @@ While start is less than end:
 
 - Decrement end to point to the previous element.
 
-#### Step 8:
-Print the reversed array by iterating from 0 to 4:
+**Step 8**: Print the reversed array by iterating from 0 to 4:
 
 - Print the value at address (arr + l) for each index l.
 
-#### Step 9:
-End.
+**Step 9**: End.
 
 ## 4. Algorithm: Printing a string using pointers
 
-#### Step 1:
-Start.
+**Step 1**: Start.
 
-#### Step 2:
-Declare and initialize a character array str with the string "Hello, I am Swarali Gurjar!".
+**Step 2**: Declare and initialize a character array str with the string "Hello, I am Swarali Gurjar!".
 
-#### Step 3:
-Declare a character pointer ptr.
+**Step 3**: Declare a character pointer ptr.
 
-#### Step 4:
-Assign the address of the first character of str to ptr.
+**Step 4**: Assign the address of the first character of str to ptr.
 
-#### Step 5:
-Print the string by outputting ptr.
+**Step 5**: Print the string by outputting ptr.
 
 - Since ptr points to the start of a null-terminated string, printing ptr prints the entire string.
 
-#### Step 6:
-End.
+**Step 6**: End.
 
 ## Conclusion: 
 Pointers in C++ allow direct manipulation of memory addresses, enabling efficient data access and dynamic memory management. They are essential for tasks like array manipulation, dynamic allocation, and passing variables by reference. However, misuse of pointers can lead to errors such as memory leaks or segmentation faults, so careful handling is necessary.
